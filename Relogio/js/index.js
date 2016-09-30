@@ -9,19 +9,36 @@ function relogio() {
     $("#segundo").css({"transform": rots});
     $("#minuto").css({"transform": rotm});
     $("#hora").css({"transform": roth});
+    if (tempo.getHours() < 12) {
+		$("relogio12").hide();
+		$("relogio00").show();
+	}
 }
+
+	
 
 $(document).ready(function (){
 	$('#show').hide();
 	setInterval(relogio,1000);
 	$("#hide").click(function() {
-		$(".relogio").hide();
+		$(".relogio12").hide();
+		$(".relogio00").hide();
+		$(".sombra").hide();
+		$("#minuto").hide();
+		$("#hora").hide();
+		$("#segundo").hide();
+		$("#centro").hide();
 		$('#show').show();
 		$('#hide').hide();
 	});
 	$("#show").click(function() {
-		$(".relogio").show();
+		$(".sombra").show();
+		$("#minuto").show();
+		$("#hora").show();
+		$("#segundo").show();
+		$("#centro").show
 		$('#show').hide();
 		$('#hide').show();
+		$(".relogio00").show();
 	});
 })

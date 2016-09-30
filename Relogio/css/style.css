@@ -1,41 +1,66 @@
-.relogio {
+.sombra {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 3px 1px 5px;
+    margin: 125px 47px;
+    z-index: -2;
+}
+
+
+.relogio00 {
     width: 600px;
     height: 550px;
-    border: solid 40px #000;
+    /*border: solid 40px #000;*/
     border-radius: 50%;
     margin: 100px auto;
     position: relative;
+    z-index: -1;
 }
+
+
+.relogio12 {
+    width: 600px;
+    height: 550px;
+    /*border: solid 40px #000;*/
+    border-radius: 50%;
+    margin: 100px -600px;
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
 
 #segundo {
     width: 6px;
-    height: 250px;
-    background-color: #BC0A24;
-    margin: 50px 297px;
+    height: 200px;
+    /*background-color: #BC0A24;*/
+    margin: 170px 297px;
     position: absolute;
-    box-shadow: 1px 1px 2px;
+    /*box-shadow: 1px 1px 2px;*/
     transform-origin: 3px bottom;
 }
 
 #minuto {
     width: 16px;
-    height: 250px;
-    background-color: #000;
-    margin: 50px 292px;
+    height: 200px;
+    /*background-color: #000;*/
+    margin: 170px 292px;
     position: absolute;
-    box-shadow: 1px 1px 2px;
+    /*box-shadow: 1px 1px 2px;*/
     border-radius: 10px;
     transform-origin: 8px bottom;
 }
 
 #hora {
     width: 16px;
-    height: 200px;
-    background-color: #000;
-    margin: 105px 292px;
+    height: 150px;
+    /*background-color: #000;*/
+    margin: 225px 292px;
     position: absolute;
-    box-shadow: 1px 1px 2px;
-    border-radius: 10px;
+    /*box-shadow: 1px 1px 2px;*/
+    /*border-radius: 10px;*/
     transform-origin: 8px bottom;
 }
 
@@ -43,21 +68,22 @@
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    margin: 285px 285px;
+    margin: 355px 285px;
     background-color: #000;
     position: absolute;
     box-shadow: 1px 1px 5px;
 }
 
 #title {
+    display: block;
     margin: auto;
+    position: relative;
     width: 50%;
     border: 3px solid #000;
-    padding: 10px;
     box-shadow: 1px 1px 5px;
 }
 
-#footer {
+#hide , #show {
     border: 3px solid #000;
     position: absolute;
     bottom: 0;
@@ -68,7 +94,7 @@
 }
 
 body {
-    background-color: #F8F8FF;
+    background-image: url("../img/bg.png");
 }
 
 h1 {
